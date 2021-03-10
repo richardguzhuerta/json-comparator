@@ -1,0 +1,11 @@
+version: "3"
+services:
+  diff-json:
+    image: json-comparator:LOCAL-BUILD
+    container_name: json-comparator
+    restart: always
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+
